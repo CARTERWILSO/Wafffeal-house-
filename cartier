@@ -1,0 +1,53 @@
+onEvent("StartButton", "click", function( ) {
+  setScreen("TutorialScreen");
+});
+onEvent("TutorialScreen", "click", function( ) {
+  setScreen("1stStreet");
+});
+onEvent("GoHome(option)", "click", function( ) {
+  setScreen("CerealEndin");
+  playSound("coughing-grandpa-1-189848.mp3", false);
+  stopSound();
+});
+onEvent("goToWaffleHouse(option)", "click", function( ) {
+  setScreen("2ndStreet");
+});
+onEvent("YesTheAlley", "click", function( ) {
+  setScreen("ShortCutAlley");
+});
+onEvent("ShortCutAlley", "click", function( ) {
+  setScreen("Collaballey");
+});
+onEvent("HelpMe2b", "click", function( ) {
+  setText("Its2B!", "She gave you a sword (click here to continue)");
+});
+onEvent("Nothing(real)", "click", function( ) {
+  setText("Nothing(real)", "Nah pick the other one");
+});
+onEvent("Its2B!", "click", function( ) {
+  setScreen("SlipAndFall");
+});
+onEvent("RunToWaffleHouse", "click", function( ) {
+  setScreen("SlippedEnding");
+  playSound("cartoonslip.mp3", false);
+  stopSound();
+});
+onEvent("KeepWalking", "click", function( ) {
+  setScreen("WaffleHouse");
+});
+var list = [1, 2, 3];
+console.log("The list is a fill in no clue how to use it in this type of game and I'm not starting over");
+if ("Waffles" == "Waffle") {
+  console.log("If it's true that's great");
+} else {
+  console.log("Oh well...");
+}
+onEvent("KeepWalking", "click", function( ) {
+  setScreen("WaffleHouse");
+});
+onEvent("PlsMove", "click", function( ) {
+  setScreen("Eaten");
+});
+onEvent("UseSword!", "click", function( ) {
+  setScreen("NewWarlord");
+});
